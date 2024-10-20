@@ -67,7 +67,10 @@ public class Frame extends JFrame {
             this.signupOption.setForeground(new Color(255,255,255));
             this.signupOption.setBounds(0, this.welcomePanel.getHeight()/2 -15, this.welcomePanel.getWidth(), 50);
 
-            this.signupOption.addActionListener(e -> entryMethodisLogin = true);
+            this.signupOption.addActionListener(e -> {
+                entryMethodisLogin = false;
+                components();
+            });
 
             this.welcomePanel.add(this.signupOption);
         }
@@ -79,7 +82,10 @@ public class Frame extends JFrame {
             this.loginOption.setForeground(new Color(255,255,255));
             this.loginOption.setBounds(0, this.welcomePanel.getHeight()/2 - 100, this.welcomePanel.getWidth(), 50);
 
-            this.signupOption.addActionListener(e -> entryMethodisLogin = false);
+            this.loginOption.addActionListener(e -> {
+                entryMethodisLogin = true;
+                components();
+            });
 
             this.welcomePanel.add(this.loginOption);
         }
