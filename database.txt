@@ -1,0 +1,5 @@
+test@gmail.com:password
+test2@gmail.com:password2
+fodderemail@gmail.com:p@$$wOrD
+wowmail@gmail.com:wow123
+testmail:test123
